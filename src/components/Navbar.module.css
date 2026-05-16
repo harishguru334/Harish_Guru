@@ -1,0 +1,43 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background: rgba(11, 26, 47, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.4rem;
+  color: var(--accent2);
+  letter-spacing: 0.03em;
+}
+
+.links {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+}
+
+.links a {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--accent2);
+}
+
+@media (max-width: 600px) {
+  .nav { padding: 1rem 1.2rem; }
+  .links { gap: 1rem; }
+}
